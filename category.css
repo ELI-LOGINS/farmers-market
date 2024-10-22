@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c6e9ba;
+}
+
+.container{
+    background-color: #f9fcf8;
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 16px;
+    align-items: center;
+    margin-left: 10%;
+    padding: 2% 2% 4% 4%;
+}
+
+.filter{
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 7px;
+    margin-bottom: 3%;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.category{
+    font-family: "Epilogue", sans-serif;
+    margin-bottom: 3%;
+}
+
+.fruit{
+    border: 2px solid #c6e9ba;
+    padding: 1%;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-family: "Epilogue", sans-serif;
+}
+
+
+.vege{
+    border: 2px solid #c6e9ba;
+    padding: 1%;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meat{
+    border: 2px solid #c6e9ba;
+    padding: 1%;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dairy{
+    border: 2px solid #c6e9ba;
+    padding: 1%;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sea{
+    border: 2px solid #c6e9ba;
+    padding: 1%;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn > button{
+    width: 200px;
+    padding: 1%;
+    border: none;
+    border-radius: 8px;
+    background-color: #c6e9ba;
+}
+
+.btn > button:hover{
+    background-color: green;
+    cursor: pointer;
+}
