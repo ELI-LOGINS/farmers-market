@@ -12,7 +12,7 @@ body{
 
 .heada{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     padding: 2%;
@@ -39,7 +39,7 @@ nav{
     flex-direction: row;
     align-items: center;
 }
-
+/*  */
 nav a{
     height: 100%;
     padding: 0 10px;
