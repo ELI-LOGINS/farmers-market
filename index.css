@@ -16,6 +16,7 @@ body{
     align-items: center;
     margin: auto;
     padding: 2%;
+    margin-bottom: 1%;
 }
 
 .header-contaner > h2{
@@ -24,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 nav{
     display: flex;
@@ -48,7 +50,9 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #4df34d;
+    padding: auto;
+    border: 2px solid #69e929;
+    border-radius: 5px;
 }
 nav svg{
     fill: #333;
@@ -137,23 +141,29 @@ input::placeholder{
 }
 .bg-image{
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     margin-top: 2%;
-    padding-top: 22%;
-    background-image: url("pexels-olia-danilevich-5418659.jpg");
+    padding: 12%;
+    background-image: url("/image/pexels-olia-danilevich-5418659.jpg");
     background-size: cover;
     background-position: center;
 }
 h1{
+    text-align: center;
     color: #ebf3e7;
     padding: 2%;
+    font-family: "epilogue", "Noto Sans", sans-serif;
+    font-size: 80px;
+    
 }
 
 .bg-image>h3{
     padding-bottom: 5%;
+    text-align: center;
     padding: 2%;
     color: #ebf3e7;
+    font-size: 32px;
 }
 
 
@@ -161,8 +171,54 @@ h1{
 .product > h2{
     padding: 2%;
     margin-left: 3%;
+    text-align: center;
     font-family: 'epiogue' 'Noto sans' sans-serif;
 }
+
+.blue-btn a{
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    display:block; /* important */
+  }
+  
+  .blue-btn, .first-link{
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;     
+  }
+  
+  
+  .blue-btn{
+    height: 64px;
+    font: normal normal 700 1em/4em Arial,sans-serif;
+    overflow: hidden;
+    width: 200px;
+    background-color: #3b5998;
+    border-radius: 20px;
+    position: absolute;
+    left: 40%;
+    margin-top: 5%
+  }
+  
+  .blue-btn:hover{
+     background-color: #c41111;
+    
+  }
+  
+  .blue-btn a:hover{
+    text-decoration: none;
+  }
+  
+  .first-link{
+    margin-top: 0em;   
+  }
+  
+  .blue-btn:hover .first-link{
+    margin-top: -4em;
+  }
 
 .product-lettuce{
    width: 100;
@@ -183,7 +239,7 @@ h1{
 
 
 p{
-    color: rgb(97, 250, 97);
+    color: rgb(241, 13, 13);
     margin-left: 2%;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -237,4 +293,58 @@ img{
   color: #f05555;
   font-size: 1.5em;
   text-decoration: none;
+}
+
+footer {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+footer .social-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+.container1, .container2{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
