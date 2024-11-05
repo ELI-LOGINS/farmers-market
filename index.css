@@ -99,7 +99,7 @@ nav svg{
 }
 
 /* max width for tablet */
-@media(max-width: 758px){
+@media(max-width: 768px){
     .links-container{
      
         flex-direction: column;
@@ -495,7 +495,7 @@ footer .footer-section .contact .info li a{
     footer .footer-section{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(2, 2fr);
         grid-gap: 20px;
     }
 }
