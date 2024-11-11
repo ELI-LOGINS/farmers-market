@@ -45,7 +45,7 @@ nav{
 
 nav a{
     height: 100%;
-    padding: 0 10px;
+    padding: 0 24px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -137,6 +137,7 @@ nav svg{
     justify-content: center;
 }
 .ipt-search{
+    margin-top: 1%;
     width: max-content;
     display: flex;
     align-items: center;
@@ -172,7 +173,6 @@ input::placeholder{
     background-image: url("/image/pexels-olia-danilevich-5418659.jpg");
     background-position: center;
     background-size: cover;
-    margin-bottom: 5%;
 }
 .image{
     display: flex;
@@ -183,65 +183,26 @@ input::placeholder{
     max-width: 1200px;
     width: 100%;
     border-radius: 20px;
-    margin-top: 2%;
-    padding: 8%;
+    padding: 5%;
     background-size: cover;
     background-position: center;
 }
 h1{
     text-align: center;
     color: #ebf3e7;
-    padding: 2%;
+    padding: 0.5%;
     font-family: "epilogue", "Noto Sans", sans-serif;
     font-size: 5em;
     
 }
 
 .bg-image>h3{
-    padding-bottom: 5%;
+    padding-bottom: 6%;
     text-align: center;
     padding: 2%;
     color: #ebf3e7;
     font-size: 2em;
 }
-
-   /* Media query for tablets */
-   @media (max-width: 768px) {
-    .bg-image h1 {
-        font-size: 2em; /* Adjust font size for tablets */
-    }
-
-    .bg-image h3 {
-        font-size: 1em; /* Adjust font size for tablets */
-    }
-
-    .bg-image button {
-        font-size: 0.9em;
-        width: 90px;
-        height: 30px;
-        padding: 5px 0;
-    }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 480px) {
-    .bg-image  {
-        font-size: 1.5em; /* Adjust font size for mobile devices */
-    }
-
-    .bg-image h3 {
-        font-size: 0.5em; /* Adjust font size for mobile devices */
-    }
-
-    .bg-image button {
-        font-size: 0.9em;
-        width: 90px;
-        height: 30px;
-        padding: 5px 0;
-    }
-}
-
-  
 
 .product > h2{
     padding: 2%;
@@ -288,6 +249,54 @@ h1{
        transition-delay:0.2s;
     }
   }
+
+   /* Media query for tablets */
+   @media (max-width: 768px) {
+    .bg-image h1 {
+        font-size: 2em; /* Adjust font size for tablets */
+    }
+
+    .bg-image h3 {
+        font-size: 1em; /* Adjust font size for tablets */
+    }
+
+    .bg-image>button {
+        width: 150px;
+        padding: 15px 0; 
+        font-size: 1em; 
+   } 
+   .bg-image>button:before {
+        width: 150px; 
+        height: 150px; 
+       }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .bg-image  {
+        font-size: 1.5em; /* Adjust font size for mobile devices */
+    }
+
+    .bg-image h3 {
+        font-size: 0.5em; /* Adjust font size for mobile devices */
+    }
+    
+    .bg-image>button {
+        width: 48px; 
+        padding: 8px 0; 
+        font-size: 0.3em; 
+    } 
+    .bg-image>button:before { 
+    width: 48px; 
+    height: 48px; 
+}
+  
+}
+
+
+  
+
+
   
 
 .product-lettuce{
@@ -331,12 +340,24 @@ img{
 {
     .products{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         row-gap: 2px;
         column-gap: 2px;
         cursor: pointer;   
     }
 }
+
+@media( max-width: 490px)
+{
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+        column-gap: 2px;
+        cursor: pointer;   
+    }
+}
+
 
 /* SIBLING FADE: fade out siblings around a hovered item */
 
@@ -378,11 +399,11 @@ img{
 
 
 footer{
-    background-color: #495a3a;
+    background-color: #64b919;
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 40px;
+    padding: 80px 40px;
 }
 
 footer .footer-section{
@@ -496,6 +517,16 @@ footer .footer-section .contact .info li a{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 490px)
+{
+    footer .footer-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
         grid-gap: 20px;
     }
 }
