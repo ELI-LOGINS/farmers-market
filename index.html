@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmers_Market</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/image/agriculture_48dp_75FB4C_FILL0_wght400_GRAD0_opsz48.svg">
 </head>
 <body>
     <!-- navbar section -->
    <div class="container">
-      <div class="heada">
-            <div class="header-container">
-              <h2>Farmers <span>Market</span></h2>
-            </div>
-            <!-- shopping cart favicon -->
-            <div>
-                <a href="#"><i class="fa-solid fa-cart-shopping" id="icon"></i></a>
-            </div>
-            <div>
+        <div class="hero" id="hero1">
+            <div class="header">
+                <div class="header-container">
+                 <h2>Farmers Market</h2>
+                </div>
+             <!-- shopping cart favicon -->
+               <div>
+                 <a href="#"><i class="fa-solid fa-cart-shopping" id="icon"></i></a>
+                </div>
+              <div>
                 <nav>
                     <input type="checkbox" id="sidebar-active">
                     <label for="sidebar-active" class="open-sidebar-btn">
@@ -34,10 +37,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                         </label>
 
-                        <a href="index.html">Home</a>
+                        <a href="#hero1">Home</a>
                         <a href="category.html">Categories</a>
-                        <a href="#">Favourites</a>
-                        <a href="#">About</a>
+                        <a href="#featured-products">Products</a>
+                        <a href="#footer1">About</a>
                     </div>
                 </nav>
             </div>
@@ -56,18 +59,12 @@
             <div class="bg-image">
                 <h1>Hilltop Farm</h1>
                 <h3>The best among all organic farms in Ghana</h3>
-                 <div class="blue-btn"> <!--Get Started button -->
-                    <a class="first-link" href="">
-                      Get Started
-                    </a>
-                    <a href="">
-                    Learn More
-                    </a>
-                  </div>
+                <button>Shop Now</button>
             </div>
         </div>
+     </div>
         <!-- product item cards section -->
-        <div class="product">
+        <div class="product" id="featured-products">
           <h2 >Featured products</h2>
 
            <div class="products">
@@ -226,33 +223,68 @@
 
             </div>
         </div>
+        
+        <section class="about-section">
+            <h2>About farmers market</h2>
+            <p>lorem Ipsum is that it has a more or lesss normal distribution of letters, as opposed to using content here,<br>content here, making it look like readable English. Many desktop packages and web pages Many <br>desktop publishing packages and web</p>
+
+            <button>READ MORE</button>
+        </section>
 
         <hr>
         <!-- footer section -->
-        <footer>
-            <div class="container">
-                <div class="container1">
-                    <div>
-                        <h3>Farmers Market</h3>
-                        <p>Connecting you to nature's best.</p>
-                    </div>
-                    <nav>
-                        <a href="/privacy-policy">Privacy Policy</a>
-                        <a href="/terms-of-service">Terms of Service</a>
-                    </nav>
+        <footer id="footer1">
+           <div class="footer-section">
+                <div class="sec about">
+                  <h2>About Us</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                     elit. Qui praesentium, veritatis fugit ex nemo esse nulla, error <br>
+                     ipsum doloremque sapiente quo!
+                   </p>
+                   <ul class="social">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                   </ul>
                 </div>
-                <hr>
-                <div class="container2">
-                    <p>© 2023 Farmers Market. All rights reserved.</p>
-                    <div class="social-links">
-                        Follow us:
-                        <a href="#">Facebook</a> |
-                        <a href="#">Twitter</a> |
-                        <a href="#">Instagram</a>
-                    </div>
-                </div>    
-            </div>    
+              <div class="sec quiklinks">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="sec quiklinks">
+                <h2>Products</h2>
+
+                <ul>
+                    <li><a href="#">Fruits</a></li>
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#">Meat</a></li>
+                    <li><a href="#">Seafood</a></li>
+                </ul>
+              </div>
+                <div class="sec contact">
+                  <h2>Contact Us</h2>
+
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span><p><a href="tel:+2335441738">+233544173811</a></p>
+                        </li>
+
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span><p><a href="mailto:knowmore@gmail.com">knowmore@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+           </div>
         </footer>
+        <div class="copyright">
+            <p>Copyright Farmers Market 2024. All Rights Reserved</p>
+        </div>
         
     </div>
 </body>
